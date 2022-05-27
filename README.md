@@ -26,3 +26,7 @@ or
 ```
 tmux-prefix U 
 ```
+
+## Screenshot
+
+![kanagawa-tmux](/screenshot/kanagawa.jpg?raw=true "kanagawa-tmux")

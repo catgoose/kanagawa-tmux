@@ -22,10 +22,6 @@ Install plugin with
 ```
 tmux-prefix I 
 ```
-or
-```
-tmux-prefix U 
-```
 
 ## Screenshot
 

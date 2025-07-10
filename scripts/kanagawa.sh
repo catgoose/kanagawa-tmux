@@ -54,7 +54,7 @@ tmux set-option -g status-right-length 100
 
 flags="#{?window_flags,#{?window_active,#[fg=${window_active_fg}],#{?window_last_flag,#[fg=${window_last_fg}],#[fg=${window_inactive_fg}]}}#{window_flags},}"
 tmux set-option -g status-left "#[bg=$session_bg]#{?client_prefix,#[fg=$session_active_fg],}#{?client_prefix,#[bg=$session_active_bg],} "#S"#[fg=${session_bg},bg=${bar_bg}]#{?client_prefix,#[fg=${session_active_bg}],}${left_sep}"
-tmux set-window-option -g window-status-current-format "#[fg=${bar_bg}]${left_sep} #I #W ${flags} #[fg=${window_active_bg},bg=${bar_bg}]${left_sep}"
+tmux set-window-option -g window-status-current-format "#[fg=${window_active_fg},bg=${window_active_bg}]${left_sep} #I #W ${flags} #[fg=${window_active_bg},bg=${bar_bg}]${left_sep}"
 tmux set-window-option -g window-status-format "#[fg=${bar_bg}]#{?window_last_flag,,#[bg=${window_inactive_bg}]}${left_sep}#{?window_last_flag,,#[fg=${window_inactive_fg}]}#{?window_last_flag,,#[bg=$window_inactive_bg,]} #I #{?window_last_flag,#[bold],#[italics,nobold]}#W ${flags} #{?window_last_flag,#[fg=${window_last_bg}],#[fg=${window_inactive_bg}]}#[bg=${bar_bg}]${left_sep}"
 
 tmux set-option -g status-right "#[bg=${bar_bg},noitalics,nobold]"

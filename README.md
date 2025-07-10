@@ -1,14 +1,21 @@
 # kanagawa-tmux
 
+<!--toc:start-->
+
+- [kanagawa-tmux](#kanagawa-tmux)
+  - [Install](#install)
+  - [Screenshot](#screenshot)
+  <!--toc:end-->
+
 tmux theme based on [Kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 
 ## Install
 
 Add to the end of tmux.conf
 
-```
+```tmux
 # Kanagawa #
-set -g @plugin 'tyetyetye/kanagawa-tmux'
+set -g @plugin 'catgoose/kanagawa-tmux'
 
 # Autoinstall TPM
 if "test ! -d ~/.tmux/plugins/tpm" \
@@ -19,8 +26,8 @@ run '~/.tmux/plugins/tpm/tpm'
 
 Install plugin with
 
-```
-tmux-prefix I 
+```tmux
+tmux-prefix I
 ```
 
 ## Screenshot
